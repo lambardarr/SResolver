@@ -40,6 +40,12 @@ To build the sresolver tool, run the following command:
 $ go build
 
 This will create a binary named sresolver in the current directory.
+  
+  
+  To remove '.' from between the hostname and port
+  sed 's/\.:/:/g' results.txt | sed 's/\.$//' > results_fixed.txt
+This command uses the sed command to replace all occurrences of ".:" with ":" and all occurrences of "." at the end of a line with an empty string. The resulting output is redirected to a new file named results_fixed.txt.
+  
 
 Contributing
 Bug reports and pull requests are welcome on GitHub at https://github.com/yourusername/sresolver. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
