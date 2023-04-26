@@ -2,6 +2,15 @@ Sresolver
 
 sresolver is a command-line tool that resolves IP addresses to hostnames. It takes a list of IP addresses (in the format of IP:port or http(s)://IP) as input and outputs the corresponding hostnames.
 
+
+To install the latest version of sresolver from GitHub using go, you can use the following command:
+
+
+go install github.com/s1n6h/sresolver@latest
+
+
+This command will download the latest version of the sresolver tool from GitHub and install it to your $GOPATH/bin directory. You can then run sresolver from the command line.
+
 Usage
 
 sresolver [options]
