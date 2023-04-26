@@ -43,7 +43,11 @@ This will create a binary named sresolver in the current directory.
   
   
   To remove '.' from between the hostname and port
-  sed 's/\.:/:/g' results.txt | sed 's/\.$//' > results_fixed.txt
+  
+  
+sed 's/\.:/:/g' results.txt | sed 's/\.$//' > results_fixed.txt
+  
+  
 This command uses the sed command to replace all occurrences of ".:" with ":" and all occurrences of "." at the end of a line with an empty string. The resulting output is redirected to a new file named results_fixed.txt.
   
 
